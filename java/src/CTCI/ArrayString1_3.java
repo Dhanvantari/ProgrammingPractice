@@ -1,7 +1,7 @@
 package CTCI;
 
 import java.io.IOException;
-
+//Write a method to replace all spaces in a string with ‘%20’.
 public class ArrayString1_3 {
 
 	public static void main(String[] args) throws IOException{
