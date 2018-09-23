@@ -27,7 +27,7 @@ public class ArrayString1_7 {
 		for(int layer =0; layer<n/2; layer ++) { //go through all layers from outer most layer to inner layer 
 			int start = layer;
 			int end = n-1-layer;
-			for(int i= start; i<end;i++) {
+			for(int i= start; i<end;i++) { // vimp: this loop will only go from start to end-1 (not end)
 				int temp= mat[layer][i]; //temp <- top[i]
 				mat[layer][i] = mat[n-1-i][layer]; //top[i] <- left[i]
 				mat[n-1-i][layer]= mat[n-1-layer][n-1-i]; // left[i] <- bottom[i]
